@@ -57,7 +57,7 @@ class App extends Component {
         input: input
       },
       () => {
-        this.keyboardRef.keyboard.setInput(input);
+        this.keyboard.setInput(input);
       }
     );
   };
@@ -72,7 +72,7 @@ class App extends Component {
           onChange={e => this.onChangeInput(e)}
         />
         <Keyboard
-          ref={r => (this.keyboardRef = r)}
+          keyboardRef={r => (this.keyboard = r)}
           layoutName={this.state.layoutName}
           onChange={input => this.onChange(input)}
           onKeyPress={button => this.onKeyPress(button)}
