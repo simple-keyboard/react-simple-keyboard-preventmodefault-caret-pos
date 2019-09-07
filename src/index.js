@@ -11,7 +11,7 @@ class App extends Component {
   };
 
   onChange = input => {
-    let caretPosition = this.keyboardRef.keyboard.caretPosition;
+    let caretPosition = this.keyboard.caretPosition;
 
     this.setState(
       {
